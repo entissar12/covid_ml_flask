@@ -1,0 +1,51 @@
+<html>
+    <head>
+    </head>
+    <body></body>
+    
+        <h1>Êtes-vous atteint par le covid-19?</h1>
+        
+        <form  method="post" action="/check_predictor">
+          <table style="border: none;">
+            <tr>
+              <td>Toux sèche:</td>
+              <td>
+                  <select id="dry_cough" name="dry_cough">
+                    <option value="1">Oui</option>
+                    <option value="0">Non</option>
+                  </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Forte fièvre:</td>
+              <td>
+                  <select id="high_fever" name="high_fever">
+                    <option value="1">Oui</option>
+                    <option value="0">Non</option>
+                  </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Gorge irritée:</td>
+              <td>
+                  <select id="sore_throat" name="sore_throat">
+                    <option value="1">Oui</option>
+                    <option value="0">Non</option>
+                  </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Difficulté à respirer:</td>
+              <td>
+                  <select id="difficult_breathing" name="difficult_breathing">
+                    <option value="1">Oui</option>
+                    <option value="0">Non</option>
+                  </select>
+              </td>
+            </tr>
+          </table>
+          <input type="submit" name="submit">
+        </form>
+        
+    </body>
+</html>
